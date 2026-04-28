@@ -1,0 +1,73 @@
+{
+  "name": "@cula-technologies/tszpl",
+  "version": "0.0.1",
+  "description": "ZPL II generation from TypeScript",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && npm run build:bundle && npm run build:dts",
+    "build:bundle": "tsup",
+    "build:dts": "tsc -p tsconfig.build.json && cp dist/index.d.ts dist/index.d.cts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cula-Technologies/tszpl.git"
+  },
+  "keywords": [
+    "zpl",
+    "zebra",
+    "zebra programming language"
+  ],
+  "author": "Cula Technologies",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Cula-Technologies/tszpl/issues"
+  },
+  "homepage": "https://github.com/Cula-Technologies/tszpl#readme",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.1",
+    "eslint-config-prettier": "^10.1.8",
+    "pngjs": "^7.0.0",
+    "prettier": "^3.8.3",
+    "tslib": "^2.8.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^8.0.10",
+    "vitest": "^4.1.5"
+  }
+}

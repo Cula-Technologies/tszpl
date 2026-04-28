@@ -1,0 +1,7 @@
+.claude
+dist/
+/bin/
+/node_modules/
+.env*
+/backups
+/.tmp

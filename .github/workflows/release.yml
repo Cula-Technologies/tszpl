@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   release:
-    name: GitHub Release + npm publish
+    name: GitHub Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

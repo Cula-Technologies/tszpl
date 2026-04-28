@@ -1,8 +1,4 @@
 dist
 node_modules
-demo
-font-packer
-Images
-src/fonts/zpl-fonts.json
 pnpm-lock.yaml
 package-lock.json

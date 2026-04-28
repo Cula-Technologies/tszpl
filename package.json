@@ -1,6 +1,6 @@
 {
   "name": "@cula-technologies/tszpl",
-  "version": "0.0.2-beta1",
+  "version": "1.0.0",
   "description": "ZPL II generation from TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -23,14 +23,14 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "build": "npm run typecheck && npm run build:bundle && npm run build:dts",
+    "build": "npm run clean && npm run typecheck && npm run build:bundle && npm run build:dts",
+    "clean": "rm -rf dist",
     "build:bundle": "tsup",
     "build:dts": "tsc -p tsconfig.build.json && cp dist/index.d.ts dist/index.d.cts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
-    "prepare": "npm run build",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -43,7 +43,7 @@
     "zebra programming language"
   ],
   "author": "Cula Technologies",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Cula-Technologies/tszpl/issues"
   },
@@ -61,7 +61,6 @@
     "@types/node": "^25.6.0",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
-    "pngjs": "^7.0.0",
     "prettier": "^3.8.3",
     "tslib": "^2.8.1",
     "tsup": "^8.5.1",

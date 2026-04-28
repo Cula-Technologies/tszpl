@@ -3,5 +3,5 @@ dist/
 /bin/
 /node_modules/
 .env*
-/backups
 /.tmp
+.DS_Store

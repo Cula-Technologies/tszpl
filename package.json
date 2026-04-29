@@ -1,6 +1,6 @@
 {
   "name": "@cula-technologies/tszpl",
-  "version": "0.0.2-beta1",
+  "version": "0.0.2",
   "description": "ZPL II generation from TypeScript",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -43,7 +43,7 @@
     "zebra programming language"
   ],
   "author": "Cula Technologies",
-  "license": "GPL-3.0",
+  "license": "(MIT OR GPL-3.0-or-later)",
   "bugs": {
     "url": "https://github.com/Cula-Technologies/tszpl/issues"
   },

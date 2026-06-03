@@ -1,5 +1,9 @@
 # @cula-technologies/tszpl
 
+> [!WARNING]
+> **This repository has been archived**  
+> This project is no longer actively maintained or supported. The code is kept here for historical reference only. If you are looking for a active version, please visit [JSZPL]([https://github.com/user/new-repo](https://github.com/DanieLeeuwner/JSZPL).
+
 ![BADGE_NPM_VERSION](https://img.shields.io/npm/v/@cula-technologies/tszpl) ![BADGE_NPM_LICENCE](https://img.shields.io/npm/l/@cula-technologies/tszpl)
 
 Generate ZPL II from TypeScript.
